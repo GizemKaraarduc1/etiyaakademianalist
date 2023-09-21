@@ -1,7 +1,19 @@
+#-Eğer final notu 40'dan küçükse kullanıcı kaldı
+#eğer ortalama notu 50den küçükse kullanıcı kaldı
+#eğer vize finalin 2 katı ise kullanıcı kaldı
+
+
 Vize= float(input("Vize notunuzu girin: "))
 Final= float(input("Final notunuzu girin: "))
+if Final<40:
+    print("Kaldınız")
+
+if Vize==Final*2:
+    print("Kaldınız")
 
 notOrtalamasi=float((Vize * 0.4) + (Final *0.6))
+if notOrtalamasi<50:
+    print("Kaldınız")
 
 if notOrtalamasi>=0 and notOrtalamasi<49:
     print("FF aldınız")
@@ -15,5 +27,6 @@ elif notOrtalamasi>=80 and notOrtalamasi<100:
     print("AA aldınız")
 else:
     print("Not ortalaması 100'den büyük olamaz.")
+
 
 #yaren çakıcı ile yapıldı
