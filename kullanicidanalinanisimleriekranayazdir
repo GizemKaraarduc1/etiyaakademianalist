@@ -7,3 +7,4 @@ for i in range (10):
     name.append(isimSoyisim)
 print(name)
 
+#yaren çakıcı ile birlikte yapıldı
