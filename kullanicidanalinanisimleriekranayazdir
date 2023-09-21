@@ -1,0 +1,9 @@
+#Kullanıcıdan aldığı(input) 10 adet isim soyisim bilgisini bir diziye ekleyen ve 
+#işlemler sonunda bu diziyi ekrana yazdıran programı geliştiriniz. 
+
+name=[]
+for i in range (10):
+    isimSoyisim=input("Lütfen adınızı ve soyadınızı yazınız!")
+    name.append(isimSoyisim)
+print(name)
+
