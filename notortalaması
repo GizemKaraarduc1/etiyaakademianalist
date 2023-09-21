@@ -1,0 +1,19 @@
+Vize= float(input("Vize notunuzu girin: "))
+Final= float(input("Final notunuzu girin: "))
+
+notOrtalamasi=float((Vize * 0.4) + (Final *0.6))
+
+if notOrtalamasi>=0 and notOrtalamasi<49:
+    print("FF aldınız")
+elif notOrtalamasi>=50 and notOrtalamasi<59:
+    print("DD aldınız")
+elif notOrtalamasi>=60 and notOrtalamasi<69:
+    print("CC aldınız")
+elif notOrtalamasi>70 and notOrtalamasi<79:
+    print("BB aldınız")
+elif notOrtalamasi>=80 and notOrtalamasi<100:
+    print("AA aldınız")
+else:
+    print("Not ortalaması 100'den büyük olamaz.")
+
+#yaren çakıcı ile yapıldı
