@@ -1,0 +1,79 @@
+class Teacher:
+
+    def __init__(self,tName,tSurname,brans,homework,process):
+        self.tName = tName
+        self.TSurname = tSurname
+        self.brans = brans
+        self.homework=homework
+        self.process=process
+           
+    def findLesson(self):
+        print(f"{self.tName} {self.TSurname} {self.brans} derslerine giriyor.")
+    
+    def giveHomework(self):
+         print(f"{self.homework} ödevini verdi.")
+
+
+
+class Student:
+   def __init__(self,name,surname,studentNum,Age,process):
+      self.name =name
+      self.surname = surname
+      self.studentNum = studentNum
+      self.Age=Age
+      self.process=process
+                 
+   def findNum(self):
+      print(f"{self.name} {self.surname} numarası: {self.studentNum}")
+        
+    
+   def age(self):
+      print(f"{self.name} {self.surname} yaşı: {self.age}")
+
+
+from student import Student
+from teacher import Teacher
+
+studentList = []
+teacherList = []
+
+def adding(process,obje):#hazırladığımız yeni üye=obje
+    if process== 1:      
+        studentList.append(obje)
+        
+    elif process== 2:
+        teacherList.append(obje)
+        
+    else:
+        print("Please enter a true type")
+
+def listing(process):
+    if process==1:
+        for student in studentList:
+            print(student.name, student.surname,student.studentNum,student.Age)
+    
+    if process==2:
+        for teacher in teacherList:
+            print(teacher.tName, teacher.TSurname,teacher.brans,teacher.homework)
+
+s1 = Student("Gizem","KARAARDUÇ",123, 25,"student")
+s2 = Student("Yaren","ÇAKICI", 234, 12, "student")
+
+t1 = Teacher("İrem","BALCI","Python Kodlama","Class Tanımları",2)
+t2 = Teacher("Engin","DEMİROĞ","Veri Tabanı","Erd Şemaları", 2)
+
+adding(1,s1)
+adding(1,s2)
+adding(2,t1)
+adding(2,t2)
+listing(1)
+listing(2)
+
+
+
+  
+
+
+
+    
+    
